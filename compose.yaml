@@ -1,19 +1,9 @@
 version: '3'
 services:
-  apisix:
-    image: apache/apisix:3.8.0-debian
-    ports:
-      - "9081:9080"  # Cambiato da 9080 a 9081
-      - "9444:9443"  # Cambiato da 9443 a 9444
-    volumes:
-      - ./conf:/usr/local/apisix/conf
-    networks:
-      - apisix-quickstart-net
-
   spring-boot-app:
     image: spring-boot-app-dummy
     ports:
-      - "8081:8081"  # Assicurati che la porta qui corrisponda a quella configurata nel tuo server Spring Boot
+      - "8081:8081"
     networks:
       - apisix-quickstart-net
 
