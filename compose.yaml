@@ -11,7 +11,7 @@ services:
       - apisix-quickstart-net
 
   spring-boot-app:
-    image: spring-boot-app
+    image: spring-boot-app-dummy
     ports:
       - "8081:8081"  # Assicurati che la porta qui corrisponda a quella configurata nel tuo server Spring Boot
     networks:
