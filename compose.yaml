@@ -3,7 +3,7 @@ services:
   apisix:
     image: apache/apisix:3.8.0-debian
     ports:
-      - "9080:9080"
+      - "9081:9080"  # Cambiato da 9080 a 9081
       - "9444:9443"  # Cambiato da 9443 a 9444
     volumes:
       - ./conf:/usr/local/apisix/conf
