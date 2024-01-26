@@ -3,7 +3,7 @@ services:
   spring-boot-app:
     image: spring-boot-app-dummy-2
     ports:
-      - "8080:8080"
+      - "8081:8081"
     networks:
       - apisix-quickstart-net
 
