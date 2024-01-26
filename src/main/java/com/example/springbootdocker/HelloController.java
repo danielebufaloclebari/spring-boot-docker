@@ -8,12 +8,12 @@ public class HelloController {
 
     @RequestMapping("/")
     String hello() {
-        return "Hello World, Spring Boot!";
+        return "Hello 2 World, Spring Boot!";
     }
     
-    @RequestMapping("/hello/{name}")
+    @RequestMapping("/hello2/{name}")
     String hello2(@PathVariable String name) {
-        return "Hello World !"+name.toString();
+        return "Hello 2 World !"+name.toString();
     }
 
 }
